@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Туризм</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="./icons/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Lacquer&family=Londrina+Sketch&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4fddbea4-9075-4da5-a71e-e5687e9d309f&lang=ru_RU"></script>
+
+  </head>
+  <body onload="showWeather()">
+    <div class="cont">
+      <div id="map"></div>
+      <div class="controls">
+        <div class="card" id="place-card" style="min-width: 40%">
+          <div class="card-head">
+            <img class="card-icon" src="./icons/marker-custom.svg"></img>
+            <h2 class="card-title">Выберите место</h2>
+          </div>
+          <div class="card-body">
+            <p class="card-address"><strong>Адрес:</strong> -</p>
+            <p class="card-phone"><strong>Телефон:</strong> -</p>
+            <p class="card-category"><strong>Категория:</strong> -</p>
+            <p class="card-hours"><strong>Часы работы:</strong> -</p>
+            <a href="#" class="card-url" target="_blank">Веб-сайт</a>
+          </div>
+        </div>
+        <div class="card" id="weather-card"></div>
+        <p style="height: fit-content;">Кликните дважды, чтобы создать метку</p>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+  </body>
+</html>

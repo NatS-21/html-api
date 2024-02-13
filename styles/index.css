@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+body,
+html,
+.cont {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+input {
+  margin: 0;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  z-index: 1000;
+}
+
+.card {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  padding-left: 1em;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.card-head img {
+  width: 30px;
+  height: 42px;
+}
